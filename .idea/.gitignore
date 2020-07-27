@@ -1,0 +1,9 @@
+# Default ignored files
+/dictionaries
+/shelf
+/workspace.xml
+/tasks.xml
+/usage.statistics.xml
+
+# Editor-based HTTP Client requests
+/httpRequests
