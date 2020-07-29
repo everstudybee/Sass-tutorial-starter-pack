@@ -11,3 +11,45 @@
     border: 2px solid $secondary-background;
     border-radius: 25px 0;
 }
+
+@mixin counter-color($class, $start, $end) {
+    @for $i from $start through $end {
+        .#{$class}_#{$i} {
+            @if $i == 3 {
+                background: rgba(201, 102, 153, 1/($i+1));
+            } @else {
+                background: rgba(201, 102, 153, 1/$i);
+            }
+        }
+    }
+}
+
+@mixin text-color($class, $numbers) {
+    @each $i in $numbers {
+        .#{$class}_#{$i} {
+            border-color: rgba(201, 102, 153, 1/$i);
+        }
+    }
+}
+
+@mixin alignment($class, $i, $end) {
+    @while $i<$end {
+        &:nth-of-type(#{$i}) {
+            .#{$class} {
+                justify-content: map-get($alignment, $i);
+            }
+        }
+        $i: $i+1;
+    }
+}
+
+@mixin alignment-reverse($class, $i, $end) {
+    @while $i<$end {
+        &:nth-of-type(#{$i}) {
+            .#{$class} {
+                justify-content: map-get($alignment-reverse, $i);
+            }
+        }
+        $i: $i+1;
+    }
+}

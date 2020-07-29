@@ -1,0 +1,17 @@
+@keyframes rotate-background {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-background-reverse {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}

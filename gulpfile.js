@@ -7,7 +7,7 @@ const imagemin = require('gulp-imagemin');
 gulp.task('sass', () => {
     return gulp.src('./app/sass/main.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'})) //nested, expanded, compressed, compact
+        .pipe(sass({outputStyle: 'expanded'})) //nested, expanded, compressed, compact
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],
             cascade: false

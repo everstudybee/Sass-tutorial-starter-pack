@@ -1,7 +1,11 @@
 @import "shared/variables";
+@import "shared/lists";
+@import "shared/maps";
 @import "shared/global";
 @import "shared/mixins";
+@import "shared/animations";
 @import "header/header";
 @import "main-content/main-content";
 @import "main-content/introduction";
 @import "main-content/features";
+@import "main-content/pros-cons";
