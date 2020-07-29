@@ -1,0 +1,61 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        display: block;
+        vertical-align: middle;
+        width: 100%;
+
+        &-item {
+            display: block;
+            margin: 0 auto;
+            width: 250px;
+        }
+    }
+
+    &__description {
+        &-paragraph {
+            color: $main-color-dark;
+            font: 500 20px/28px $main-font;
+            text-align: justify;
+        }
+
+        &-button {
+            @include button(50%, 35px auto, 30px, 30px)
+        }
+    }
+}
+
+@media all and (min-width: $sm-min) {
+    .introduction {
+        &__description {
+            &-button {
+                transition: all .2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    background: transparent;
+                    color: $secondary-color;
+                    letter-spacing: 3px;
+                    border-radius: 0 25px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $md-min) {
+    .introduction {
+        flex-direction: row;
+
+        &__image {
+            width: 50%;
+        }
+
+        &__description {
+            width: 50%;
+        }
+    }
+}

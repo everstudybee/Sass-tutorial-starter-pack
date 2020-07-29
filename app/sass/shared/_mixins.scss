@@ -1,0 +1,13 @@
+@mixin button($width, $margin, $font-size, $line-height) {
+    width: $width;
+    margin: $margin;
+    font: 400 #{$font-size}/#{$line-height} $secondary-font;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: $secondary-background;
+    color: $main-color-light;
+    border: 2px solid $secondary-background;
+    border-radius: 25px 0;
+}

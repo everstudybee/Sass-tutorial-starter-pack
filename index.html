@@ -5,55 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kurs Sass</title>
     <link rel="stylesheet" href="dist/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Dynalight|Lato:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 <!-- Header -->
 <header class="header">
     <div class="header__container">
-        <a class="header__logo">
-            <img class="header__logo-item" src="dist/images/sass-logo.png" />
+        <a href="#" class="header__logo">
+            <img class="header__logo-item" src="dist/images/sass-logo.png" alt=""/>
         </a>
     </div>
 </header>
+
+<!-- Main container -->
 <main class="main-content container">
 
     <!-- Introduction section -->
     <section class="introduction block">
         <div class="introduction__image">
-            <img class="introduction__image-item" src="dist/images/sass-logo-big.png" />
+            <img class="introduction__image-item" src="dist/images/sass-logo-big.png" alt=""/>
         </div>
         <div class="introduction__description">
-            <p class="introduction__description-paragraph">Sass to język skryptowy rozszerzający możliwości czystego CSS'a. Dzięki szerokiej puli funkcjonalności, używany jest do osiągnięcia zaawansowanego, czystego i łatwego w utrzymaniu kodu.</p>
+            <p class="introduction__description-paragraph">Sass to język skryptowy rozszerzający możliwości czystego CSS-a. Dzięki szerokiej puli funkcjonalności, używany jest do osiągnięcia zaawansowanego, czystego i łatwego w utrzymaniu kodu.</p>
             <a class="introduction__description-button" href="http://sass-lang.com">Strona Sass</a>
         </div>
     </section>
 
     <!-- Features section -->
     <section class="features-section">
+
         <article class="features features__variables block">
             <h1 class="features__heading">Zmienne</h1>
             <div class="features__description">
                 <p class="features__description-paragraph">
-                    Pozwalają na przechowywanie dowolnych wartości używanych do tworzenia styli ; wartości liczbowych, stringów, kolorów etc.
+                    Pozwalają na przechowywanie dowolnych wartości używanych do tworzenia styli, wartości liczbowych, stringów, kolorów etc.
                 </p>
                 <p class="features__description-paragraph">
-                    Dzięki re-używalności możliwe jest zastosowanie jednej zmiennej w wielu miejscach projektu - w przypadku edycji wartości zmiennej, korekta zostanie wprowadzona we wszystkich miejscach.
+                    Dzięki re-używalności możliwe jest zastosowanie jednej zmiennej w wielu miejscach projektu; w przypadku edycji wartości zmiennej, korekta zostanie wprowadzona we wszystkich miejscach.
                 </p>
             </div>
         </article>
+
         <article class="features features__nesting block">
             <h1 class="features__heading">Zagnieżdżanie</h1>
             <div class="features__description">
                 <p class="features__description-paragraph">
-                    Symulują ideę zagnieżdżeń znaną z HTML'a, poprawiając mniej czytelną metodologię czystego CSS'a.
+                    Symulują ideę zagnieżdżeń znaną z HTML-a, poprawiając mniej czytelną metodologię czystego CSS-a.
                 </p>
                 <p class="features__description-paragraph">
                     Wprowadzona koncepcja selektora rodzica pozwala na szybkie określenie pseudoklas elementów.
                 </p>
             </div>
         </article>
+
         <article class="features features__partials block">
             <h1 class="features__heading">Struktura</h1>
             <div class="features__description">
@@ -65,17 +70,19 @@
                 </p>
             </div>
         </article>
+
         <article class="features features__mixins block">
             <h1 class="features__heading">Mixiny, extend</h1>
             <div class="features__description">
                 <p class="features__description-paragraph">
-                    Wprowadzają koncepcję zapisania deklaracji CSS'a w postaci re-używalnej zmiennej.
+                    Wprowadzają koncepcję zapisania deklaracji CSS-a w postaci re-używalnej zmiennej.
                 </p>
                 <p class="features__description-paragraph">
-                    Tak samo jak zmienne, pozwalają na łatwą implementację i edycję powielanych mechanizmów. Mogą przekazywać podane bezpośrednio przy implementacji parametry.
+                    Tak samo, jak zmienne pozwalają na łatwą implementację i edycję powielanych mechanizmów. Mogą przekazywać podane bezpośrednio przy implementacji parametry.
                 </p>
             </div>
         </article>
+
         <article class="features features__operators block">
             <h1 class="features__heading">Operatory matematyczne</h1>
             <div class="features__description">
@@ -87,6 +94,7 @@
                 </p>
             </div>
         </article>
+        
         <article class="features features__functions block">
             <h1 class="features__heading">Listy, mapy i logika</h1>
             <div class="features__description">
