@@ -2,20 +2,25 @@ html, body {
     margin: 0;
 }
 
-body{
+body {
     background: $main-background;
+    overflow-x: hidden;
 }
 
-.container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.block{
-    margin-top: 50px;
+.block {
     margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-margin {
+    margin: 0 15px;
 }
 
 @media all and (min-width: $sm-min){
