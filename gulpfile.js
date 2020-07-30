@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const {watch} = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
@@ -22,6 +23,11 @@ gulp.task('imagemin', () => {
         .pipe(gulp.dest('./dist/images'))
 });
 
-gulp.task('watch', () => {
-    gulp.watch('./app/sass/*/*.scss', gulp.series('sass'))
-});
+// gulp.task('watch', () => {
+//     gulp.watch('./app/sass/*/*.scss', gulp.series('sass'))
+// });
+
+// changes based on a documentation gulpjs.com
+exports.watch = function () {
+    watch('./app/sass/*/*.scss', gulp.series('sass'))
+}
